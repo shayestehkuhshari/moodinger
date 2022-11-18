@@ -1,4 +1,4 @@
-#Fri Nov 18 17:42:45 IRST 2022
+#Fri Nov 18 18:18:57 IRST 2022
 base.0=C\:\\Users\\shaye\\AndroidStudioProjects\\instagram\\flutter_instagram_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

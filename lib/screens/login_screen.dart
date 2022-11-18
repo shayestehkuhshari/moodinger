@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_instagram_app/screens/switch_account_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -169,13 +170,42 @@ class _LoginScreenState extends State<LoginScreen> {
                         borderRadius: BorderRadius.circular(15),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: ((BuildContext context) =>
+                              SwitchAccountScreen()),
+                        ),
+                      );
+                    },
                     child: Text(
                       'sign in',
                       style: TextStyle(
                           color: Colors.white, fontFamily: 'GB', fontSize: 16),
                     ),
                   ),
+                  SizedBox(
+                    height: 45,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Don’t have an account?',
+                        style: TextStyle(
+                            color: Color(0xffC5C5C5),
+                            fontSize: 16,
+                            fontFamily: 'GB'),
+                      ),
+                      Text(
+                        ' / Sign up',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontFamily: 'GB'),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
