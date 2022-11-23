@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_app/screens/home_screen.dart';
-import 'package:flutter_instagram_app/screens/login_page.dart';
 import 'package:flutter_instagram_app/screens/login_screen.dart';
 import 'package:flutter_instagram_app/screens/switch_account_screen.dart';
 
@@ -69,7 +68,7 @@ class SplashScreen extends StatelessWidget {
 
   Future<void> goToSignPage(BuildContext context) async {
     Timer(
-      Duration(seconds: 2),
+      Duration(seconds: 4),
       () {
         Navigator.pushReplacement(
             context,

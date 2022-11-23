@@ -68,7 +68,6 @@ class HomeScreen extends StatelessWidget {
             child: DraggableScrollableSheet(
               initialChildSize: 0.5,
               minChildSize: 0.2,
-              maxChildSize: 0.7,
               builder: (context, controler) {
                 return ShareBottomsheet(
                   controller: controler,

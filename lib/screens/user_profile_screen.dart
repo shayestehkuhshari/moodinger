@@ -1,9 +1,9 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_app/screens/user_profile_screen.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:blur/blur.dart';
+import 'package:smooth_corner/smooth_corner.dart';
 
 class UserProfileScreen extends StatelessWidget {
   UserProfileScreen({super.key});
@@ -66,7 +66,22 @@ class UserProfileScreen extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 50),
-                    child: Container(
+                    child: SmoothClipRRect(
+                      smoothness: 0.6,
+                      side: BorderSide(color: Color(0xffF35383), width: 2),
+                      borderRadius: BorderRadius.circular(20),
+                      child: Padding(
+                        padding: EdgeInsets.all(4),
+                        child: Image.asset(
+                          'images/profile1.png',
+                          width: 58,
+                          height: 58,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+
+                    /*Container(
                       height: 62,
                       width: 62,
                       decoration: BoxDecoration(
@@ -86,7 +101,7 @@ class UserProfileScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                    ),
+                    ),*/
                   ),
                   Padding(
                     padding: EdgeInsets.only(bottom: 24),
